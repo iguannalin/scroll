@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
     if (!e.target.value) document.body.innerHTML = "";
     debounce(() => {
       let elem;
-      for (let i = 0; i < w; i+=16) {
+      for (let i = 0; i < w; i+=12) {
         elem = document.createElement('p');
         elem.innerText = e.target.value;
         elem.style.top = `${i}px`;
@@ -27,7 +27,7 @@ window.addEventListener("load", () => {
             behavior: "smooth",
           });
           isDown = !isDown;
-        }, 500
+        }, 560
       );
     }, 200);
   }
